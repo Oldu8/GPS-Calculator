@@ -1,0 +1,101 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    height: 100%;
+    font-family: 'Otomanopee One', sans-serif;
+    background: #91eae4;
+    background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);
+}
+
+h2 {
+    text-align: center;
+    background: #0d337a;
+    color: white;
+    margin: 0;
+    padding: 10px 28px;
+    font-weight: bold;
+}
+
+h3 {
+    color: black;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.enter__digit {
+    margin: 10px auto;
+    width: 600px;
+    height: 300px;
+    background: white;
+    position: relative;
+    border: 2px solid grey;
+    display: flex;
+    align-items: center;
+}
+
+.digit__button {
+    background-color: #214d9e;
+    border: 2px solid grey;
+    transform: translateX(80%);
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+form {
+    height: 100%;
+    width: 50%;
+    background: #f7f7f7;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input__digit {
+    width: 280px;
+    height: 20px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.map__block {
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+.result__block {
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.headline__result {
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.data__result {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 25px;
+}
