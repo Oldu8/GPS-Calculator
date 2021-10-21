@@ -33,6 +33,7 @@ const getValues =() => {
     const coordinatesForm = document.querySelector('.form__digit');
     const coordinate1 = (coordinatesForm.coordinate1.value).split(', ');
     const coordinate2 = (coordinatesForm.coordinate2.value).split(', ');
+
     return {
         x1:coordinate1[0],
         y1:coordinate1[1],
@@ -67,4 +68,39 @@ function getDistance(values) {
 function pushResult() {
     const resultHeadline = document.querySelector('.data__result')
     resultHeadline.innerText = ` ${Math.round(result)} Km`;
+    showMap();
+}
+
+function showMap() {
+    (document.getElementById('map').classList.remove('hidden'));
+    createMap(getValues());
+ } 
+
+// Google Api block
+
+function createMap(value){
+    let options = {
+        zoom: 10,
+        center: {
+            lat: parseInt(value.x1),
+            lng: parseInt(value.y1)
+        }
+    }
+    let map = new google.maps.Map(document.getElementById('map'), options);
+
+    let marker1 = new google.maps.Marker ({
+        position: {
+            lat: parseInt(value.x1),
+            lng: parseInt(value.y1)
+        },
+        map:map
+    })
+    
+    let marker2 = new google.maps.Marker ({
+        position: {
+            lat: parseInt(value.x2),
+            lng: parseInt(value.y2)
+        },
+        map:map
+    })
 }

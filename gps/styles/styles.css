@@ -70,10 +70,6 @@ form {
     background-color: white;
 }
 
-.hidden {
-    display: none;
-}
-
 .map__block {
     width: 600px;
     height: 450px;
@@ -100,7 +96,12 @@ form {
     padding-top: 25px;
 }
 
-#map {
+.map {
     height: 800px;
     width: 800px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
 }
