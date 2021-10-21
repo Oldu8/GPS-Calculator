@@ -99,3 +99,8 @@ form {
     font-size: 30px;
     padding-top: 25px;
 }
+
+#map {
+    height: 800px;
+    width: 800px;
+}
