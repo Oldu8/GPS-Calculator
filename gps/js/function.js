@@ -33,6 +33,14 @@ const getValues =() => {
     const coordinatesForm = document.querySelector('.form__digit');
     const coordinate1 = (coordinatesForm.coordinate1.value).split(', ');
     const coordinate2 = (coordinatesForm.coordinate2.value).split(', ');
+    if (!coordinatesForm.coordinate1.value) {
+        alert('There isn`t 1st coordinate')
+        return
+    }
+    if (!coordinatesForm.coordinate2.value) {
+        alert('There isn`t 2st coordinate')
+        return
+    }
 
     return {
         x1:coordinate1[0],
