@@ -88,7 +88,7 @@ function showMap() {
 
 function createMap(value){
     let options = {
-        zoom: 10,
+        zoom: 2,
         center: {
             lat: parseInt(value.x1),
             lng: parseInt(value.y1)
